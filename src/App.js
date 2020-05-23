@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import ButtonComponent from './component/button';
+import NewsItem from './component/newsItem';
+import Loading from './component/loader';
+import Badge from 'react-bootstrap/Badge'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Badge variant="secondary">Redux Saga News App</Badge>
+      <ButtonComponent/>
+      <Loading/>
+      <NewsItem/>
     </div>
   );
 }
